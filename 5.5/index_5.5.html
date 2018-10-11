@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 5.5</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<label for="angle">Угол</label>
+		<input type="number" name="angle">
+		<input type="submit" value="Рассчитать синус">
+	</form>
+	<div class="result">
+		<h2>Синус введенного угла: <span class="sin"></span></h2>
+	</div>
+	<script>
+	const form=document.querySelector("form");
+	const insert=document.querySelector(".sin");
+	
+	form.onsubmit=function(e){
+		e.preventDefault();
+		insert.innerHTML=Math.sin(form.elements.angle.value%360*Math.PI/180);
+	}
+	</script>
+</body>
+</html>
