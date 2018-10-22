@@ -1,0 +1,6 @@
+@import url(reset.css);
+
+div{
+    width: 700px;
+    height: 100px;
+}
