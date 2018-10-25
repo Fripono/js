@@ -12,7 +12,3 @@ class childCustumer extends Custumer{
         console.log("Шарик в подарок");
     }
 }
-
-const Piter=new childCustumer("Петя");
-
-Piter.buy();
