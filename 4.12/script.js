@@ -3,7 +3,7 @@
 
 	const form=document.querySelector("form");
 	
-	form.onsubmite=function(e){
+	form.onsubmit=function(e){
 		e.preventDefault();
 		console.log("Submited");
 	}
